@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>interagindo com o DOM</title>
+    <style>
+      div{
+        background-color: green;
+        width: 300px;
+        height: 300px;
+        text-align: center;
+        line-height: 300px;
+        font-size: 1.3em;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+    </style>
+</head>
+<body>
+
+    <div id="area" onclick="clicar()" onmouseenter="entrou()" onmouseout="sair()">
+        interagindo
+    </div>
+
+    <script>
+        var a = window.document.getElementById('area')
+        function clicar(){
+            a.innerText = 'azul!'
+            a.style.background = 'blue'
+        }
+        function entrou(){
+            a.innerText = 'vermelho!'
+            a.style.background = 'red'
+        }
+        function sair(){
+            a.innerText = 'verde!'
+            a.style.background = 'green'
+        }
+    </script>
+    
+</body>
+</html>
