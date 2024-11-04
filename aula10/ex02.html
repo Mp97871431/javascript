@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>condições</title>
+</head>
+<body>
+    <h1>Nacionalidade</h1>
+
+    Escreva sua nacionalidade: <input type="text" name="esc" id="esc">
+    <input type="button" value="verificar" onclick="verificar()">
+
+    <div id="res">
+
+    </div>
+
+    <script>
+        function verificar(){
+            var nac = window.document.getElementById('esc')
+            var res = window.document.getElementById('res')
+            if(nac== brasil){
+                res.innerText = `sua nacionalidade é desde país`
+            } else{
+                res.innerText = `sua nacionalidade não é desde pais`
+            }
+               
+            }
+            
+            
+        
+    </script>
+</body>
+</html>
