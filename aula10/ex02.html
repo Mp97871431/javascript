@@ -19,10 +19,11 @@
         function verificar(){
             var nac = window.document.getElementById('esc')
             var res = window.document.getElementById('res')
-            if(nac== brasil){
-                res.innerText = `sua nacionalidade é desde país`
+            res.innerHTML = `${nac}`
+            if(nac == brasil){
+                res.innerText += `<p>sua nacionalidade é desde país</p?`
             } else{
-                res.innerText = `sua nacionalidade não é desde pais`
+                res.innerText += `<p>sua nacionalidade não é desde pais</p>`
             }
                
             }
